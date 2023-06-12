@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS working with apis</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-[#f2f4f5] dark:bg-slate-900">
+    <div class="flex items-center px-5">
+      <form id="search-form" class="w-[300px] mx-auto mt-5 flex">
+        <input
+          class="py-3 px-5 rounded-tl-md rounded-bl-md"
+          type="text"
+          placeholder="search..."
+        />
+        <button
+          type="submit"
+          class="bg-blue-600 rounded-tr-md rounded-br-md px-3 text-white"
+        >
+          OK
+        </button>
+      </form>
+      <div id="mode" class="w-6 h-6 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M9.8216 2.23796C9.29417 3.38265 9 4.65697 9 6C9 10.9706 13.0294 15 18 15C19.343 15 20.6174 14.7058 21.762 14.1784C20.7678 18.6537 16.7747 22 12 22C6.47715 22 2 17.5228 2 12C2 7.22532 5.3463 3.23221 9.8216 2.23796ZM18.1642 2.29104L19 2.5V3.5L18.1642 3.70896C17.4476 3.8881 16.8881 4.4476 16.709 5.16417L16.5 6H15.5L15.291 5.16417C15.1119 4.4476 14.5524 3.8881 13.8358 3.70896L13 3.5V2.5L13.8358 2.29104C14.5524 2.1119 15.1119 1.5524 15.291 0.835829L15.5 0H16.5L16.709 0.835829C16.8881 1.5524 17.4476 2.1119 18.1642 2.29104ZM23.1642 7.29104L24 7.5V8.5L23.1642 8.70896C22.4476 8.8881 21.8881 9.4476 21.709 10.1642L21.5 11H20.5L20.291 10.1642C20.1119 9.4476 19.5524 8.8881 18.8358 8.70896L18 8.5V7.5L18.8358 7.29104C19.5524 7.1119 20.1119 6.5524 20.291 5.83583L20.5 5H21.5L21.709 5.83583C21.8881 6.5524 22.4476 7.1119 23.1642 7.29104Z"
+            fill="rgba(249,167,122,1)"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto p-5 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      id="products"
+    ></div>
+    <!-- Pagination -->
+    <div id="pagination" class="flex justify-center py-5 gap-5"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
